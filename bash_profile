@@ -1,6 +1,8 @@
 #!/bin/bash
-# Link to this from ~/.bash_profile
-# ln -s ~/Dropbox/bin/bash_profile ~/.bash_profile
 
+if [ "$1" == "ln" ] ; then 
+  # Link to this from ~/.bash_profile
+  ln -s ~/dotfiles/bash_profile ~/.bash_profile
+fi
 
-source ~/Dropbox/bin/bash_extras.sh
+source ~/dotfiles/bash_extras.sh
