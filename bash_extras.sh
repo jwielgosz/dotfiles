@@ -1,9 +1,12 @@
 
+bash_extras=~/dotfiles/bash_extras.sh
+
 #===========================================================================
 # Global
-alias b='. ~/Dropbox/bin/bash_extras.sh'
-alias bbb='bb ~/Dropbox/bin/bash_extras.sh'
-alias sw='s ~/Dropbox/bin/bash_extras.sh'
+alias b=". $bash_extras"
+alias vb="vim $bash_extras"
+alias bbb="bb $bash_extras"
+alias sw="s $bash_extras"
 
 alias topme='top -u ${USER}'
 alias cx='chmod +x'
@@ -134,6 +137,8 @@ fi
 # Stanford / PanLab
 
 alias panlab='ssh -XY wielgosz@sni-vcs-williams2.stanford.edu'
+alias attention='ssh -XY wielgosz@attention.stanford.edu'
+alias reward='ssh -XY wielgosz@reward.stanford.edu'
 
 
 
